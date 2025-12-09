@@ -6,4 +6,4 @@ output "table_arn" {
 }
 output "table_stream_arn" {
   value = aws_dynamodb_table.primary.stream_arn
-}   
+}

@@ -31,4 +31,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+variable "write_capacity" {
+  type    = number
+  default = 5
 
+}

@@ -19,7 +19,8 @@ terraform {
 }
 
 provider "aws" {
-  alias = "us-east-1"
+  alias  = "src"
+  region = "us-west-2"
   default_tags {
     tags = {
       ManagedBy = "Terraform"
@@ -29,7 +30,8 @@ provider "aws" {
 
 
 provider "aws" {
-  alias = "us-west-2"
+  alias  = "dst"
+  region = "us-west-2"
   default_tags {
     tags = {
       ManagedBy = "Terraform"
